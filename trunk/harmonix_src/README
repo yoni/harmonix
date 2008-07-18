@@ -1,0 +1,3 @@
+This code runs the 'harmonix' digital instrument. It's not been extensively tested, as the project was never fully completed, due to difficulties with the hardware.
+Most of the drivers, however, do work.  They were developed in earlier labs, and fully tested. 
+This source code was written for the Motorola 8211.
