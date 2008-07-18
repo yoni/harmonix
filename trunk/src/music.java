@@ -1,4 +1,8 @@
 
+/**
+ * This file clearly contains nothing useful.  But the project has thus begun!
+ * 
+ */
 public class music {
 
 	/**
@@ -6,7 +10,7 @@ public class music {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Hello Music!");
-		// TODO Auto-generated method stub
+		// TODO Everything!
 
 	}
 
