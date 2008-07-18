@@ -1,0 +1,38 @@
+#summary A step by step tutorial for setting up a project in Eclipse, using the GoogleCode repository.
+
+= Introduction =
+
+A step by step tutorial for setting up a project in Eclipse, using the GoogleCode repository.  It's meant to get you started with the project in the least amount of time.
+
+= Details =
+
+Download Eclipse+Subversive from Polaris (Subversive is a plugin for eclipse that lets you use subversion repositories):
+http://www.polarion.com/products/eclipse/
+
+Eclipse should run out of the box, wherever you unzip it.
+
+Create a new subversion repository location:
+{{{
+New->Other->SVN->Repository Location
+URL: https://music.googlecode.com/svn
+Your username is the first part of your email address (username@gmail.com).
+The password is generated for you. Go to:  http://code.google.com/hosting/settings to get/regenerate your password.
+}}}
+Create a new project from the subversion repository:
+{{{
+New->Other->SVN->Projects from SVN
+Pick the Google repository.
+It should load the repo, and show you :
+trunk
+tags
+branches
+Root
+}}}
+'trunk' is our working copy, i.e. golden copy.  The idea is that when you need an enhancement or have a bug, you can copy trunk into a new 'branch' and work there, committing code without affecting everyone else's code.  One the feature is done, you can test it, and then commit it to trunk.  It's not a bad method for keeping the strings untangled.  We used it last semester on Rideshare.
+
+Right now, there's not much there, besides our old code, and a new Java src directory for all new development.  Check out trunk, and see what we've got.
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
