@@ -1,0 +1,31 @@
+#labels brainstorming,Tasks,NextSteps,specifications,ideas,eclipse,IDE,Featured,Phase-Requirements,Phase-Design
+#Overall goals, next steps, and ideas for different system architectures.
+
+= Introduction =
+
+Music is aimed to be a musical instrument platform.  There are lots of ideas floating around on exactly what it should be, how musicians and developers should interact with it, and how to move forward in developing it.
+This is the place to share those ideas, suggest initiatives, and set the tone for how to go about developing the project.
+
+
+= Details =
+
+Hardware Platform:
+  * The most difficult task is finding the right hardware solution to provide modularity, reliability, and performance.  We need something highly extensible and easy to develop on.  The idea is that the core of the system is independent from the different modules and hardware extensions.  This is sort of like an API.  That way, the project is distributed and parts are independent.  The goalz is to allow people to develop their own custom user interfaces, signal processing extensions, amplifiers, etc.
+  * To accomplish this, we need to use common interfaces such as USB for power and communication, bluetooth for wireless communication, etc., and a common set of drivers that supports any "plugged-in device."
+  * We should have control mechanisms for ensuring that one device doesn't harm the rest of the system, nor cause it to lag.  These can be hardware (a fuse for power problems) or software memory,processing, and USB device control.
+  * There are likely existing platforms that can serve as our main board, with DSP processing capabilities, wireless support, etc.  We should look into existing solutions, so that we might be able to provide more hardware extensions.
+  * We need to figure out a comprehensive hardware development environment.  I think eclipse has an embedded systems plugin, so that might be a good choice of IDE.  I'm not sure if there's a board designer in eclipse, but the other project management tools will be useful, especially if we're already using eclipse for software.
+
+Software Platform:
+  * I suggest developing in Java.  It's an easy language to work with, and has extensive libraries and good documentation.  It's also integrated into Eclipse IDE more completely than C or C++.  The down side is that we lose valuable clock cycles on running Java.
+  * We should create a uniform development environment.  Here, I suggest using Eclipse.  It makes development easy, and supports Java extremely well.  If we choose C, C++, there is a CDT plugin for that, though the features aren't quite as comprehensive.
+  * It might be a good idea to develop on an existing linux distribution for real-time systems.  This will depend on the CPU we choose and supported packages in the distribution. An initial search points to http://devel.goto10.org/puredyne as a good candidate, though more research needs to be done.
+
+Next Steps:
+  1 Set up goals and expectations of what the core hardware will do, and what an out-of-the box configuration might look like.  
+  1 Same as 1, but for the modular hardware, including the user interface.
+  1 Research existing hardware platforms that agree with our requirements from 1 & 2.
+  1 From 1,2, & 3, figure out how hardware should be modularized, and which requirements should be offloaded onto modules, depending on needs for extra processing, User Interface, etc.
+  1 Research existing open-source music initiatives, linux distributions, off-the-shelf applications, and open source software libraries in Java vs C++.  We should avoid reinventing the wheel.
+  1 Put together an Eclipse development environment to be used by developers in the community, including core modules such as subversion, embedded system plugins, testing utilities, etc.
+  1 Create tutorials to get developers started.
