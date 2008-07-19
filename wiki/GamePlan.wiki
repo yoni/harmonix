@@ -1,5 +1,5 @@
 #labels brainstorming,Tasks,NextSteps,specifications,ideas,eclipse,IDE,Featured,Phase-Requirements,Phase-Design
-#Overall goals, next steps, and ideas for different system architectures.
+Overall goals, next steps, and ideas for different system architectures.
 
 = Introduction =
 
