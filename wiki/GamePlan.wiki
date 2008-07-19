@@ -6,7 +6,7 @@ Overall goals, next steps, and ideas for different system architectures.
 This project is aimed to be an open, modular musical instrument platform.  There are lots of ideas floating around on exactly what it should be, how musicians and developers should interact with it, and how to move forward in developing it.
 This is the place to share ideas, suggest initiatives, and set the tone for how to go about developing the project.
 
-== What has slowly become Yoni's manifesto. ==
+== Some ideas which slowly became Yoni's manifesto. ==
 
 Hardware Platform:
   * The most difficult task is finding the right hardware solution to provide modularity, reliability, and performance.  We need something highly extensible and easy to develop on.  The idea is that the core of the system is independent from the different modules and hardware extensions.  This is sort of like an API.  That way, the project is distributed and parts are independent.  The goal is to allow people to develop their own custom user interfaces, signal processing extensions, amplifiers, etc.
