@@ -1,20 +1,20 @@
 #labels brainstorming,Tasks,NextSteps,specifications,ideas,eclipse,IDE,Featured,Phase-Requirements,Phase-Design
 Overall goals, next steps, and ideas for different system architectures.
 
-= Introduction =
+= Musical Instrument Platform =
 
-Music is aimed to be a musical instrument platform.  There are lots of ideas floating around on exactly what it should be, how musicians and developers should interact with it, and how to move forward in developing it.
-This is the place to share those ideas, suggest initiatives, and set the tone for how to go about developing the project.
+This project is aimed to be an open, modular musical instrument platform.  There are lots of ideas floating around on exactly what it should be, how musicians and developers should interact with it, and how to move forward in developing it.
+This is the place to share ideas, suggest initiatives, and set the tone for how to go about developing the project.
 
-
-= Details =
+== What has slowly become Yoni's manifesto. ==
 
 Hardware Platform:
-  * The most difficult task is finding the right hardware solution to provide modularity, reliability, and performance.  We need something highly extensible and easy to develop on.  The idea is that the core of the system is independent from the different modules and hardware extensions.  This is sort of like an API.  That way, the project is distributed and parts are independent.  The goalz is to allow people to develop their own custom user interfaces, signal processing extensions, amplifiers, etc.
-  * To accomplish this, we need to use common interfaces such as USB for power and communication, bluetooth for wireless communication, etc., and a common set of drivers that supports any "plugged-in device."
+  * The most difficult task is finding the right hardware solution to provide modularity, reliability, and performance.  We need something highly extensible and easy to develop on.  The idea is that the core of the system is independent from the different modules and hardware extensions.  This is sort of like an API.  That way, the project is distributed and parts are independent.  The goal is to allow people to develop their own custom user interfaces, signal processing extensions, amplifiers, etc.
+  * To accomplish this, we need to use common interfaces such as USB for power and communication, bluetooth for wireless communication, etc., and a common set of drivers that supports any "plugged-in" device.
   * We should have control mechanisms for ensuring that one device doesn't harm the rest of the system, nor cause it to lag.  These can be hardware (a fuse for power problems) or software memory,processing, and USB device control.
   * There are likely existing platforms that can serve as our main board, with DSP processing capabilities, wireless support, etc.  We should look into existing solutions, so that we might be able to provide more hardware extensions.
   * We need to figure out a comprehensive hardware development environment.  I think eclipse has an embedded systems plugin, so that might be a good choice of IDE.  I'm not sure if there's a board designer in eclipse, but the other project management tools will be useful, especially if we're already using eclipse for software.
+  * We also need a few concept User Interfaces to get an idea about what kinds of modules people might come up with, and make sure we support as much innovation as possible.
 
 Software Platform:
   * I suggest developing in Java.  It's an easy language to work with, and has extensive libraries and good documentation.  It's also integrated into Eclipse IDE more completely than C or C++.  The down side is that we lose valuable clock cycles on running Java.
@@ -29,3 +29,7 @@ Next Steps:
   1 Research existing open-source music initiatives, linux distributions, off-the-shelf applications, and open source software libraries in Java vs C++.  We should avoid reinventing the wheel.
   1 Put together an Eclipse development environment to be used by developers in the community, including core modules such as subversion, embedded system plugins, testing utilities, etc.
   1 Create tutorials to get developers started.
+  1 Find amazing designers who might be interested in creating the product.
+  1 Try to get everything for free from hardware companies, focusing on the open source initiative and possibility for sales volume.
+  1 Build a business model around producing and selling the core hardware, modular systems, user interface modules, in an open developer marketplace so we can do this for a living.
+  1 Talk to professional musicians and ask them what they would like in such an instrument.  Focus on acoustic and electronic musicians, what real-time software they use, and what modules they would want as plugins.
