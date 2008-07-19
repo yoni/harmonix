@@ -1,0 +1,19 @@
+Discussion of the system architecture alternatives.
+
+= System Design=
+
+The main design phase is figuring out what our set features and corresponding system hardware requirements will be.  With a modular design, we can divide the task into a core system design and module design, with an API for module hardware.
+
+= Ideas =
+
+Some ideas for the Core hardware architecture:
+  * Motherboard with x86 and DSP-chip, upgradeable flash memory, monitor output
+  * Wireless communication (One of Blutooth, 802.11, etc.)
+  * USB bus.  Support as many Core-powered and Self-powered USB devices as possible.
+  * Allow for devices to be self-powered, to allow for small amplifiers, etc.
+
+Some ideas for Modules:
+  * Try to support different lcd monitor sizes, as that might be the most expensive plugin. Moderately-sized touch-screen monitors (7") cost circa $300.  Maybe we can get some for the prototype and develop the core interface on a GUI.
+  * Wireless wall-powered receiver that receives the digital form music directives (not waveform), and contains a DSP that converts all of the directives into high-quality analog sound.  Drawbacks: Might not work real time.
+  * Analog theremin module.  Basically an oscillator and two distance measuring devices: one for pitch, and one for volume.  [http://www.youtube.com/watch?v=mW0B1sipLBI&feature=related Video of a theremin].
+  * Analog signal mixer.  Allows mixing the Core audio output with an attached analog module, such as a theremin.
