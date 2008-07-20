@@ -18,8 +18,3 @@ Some ideas for Modules:
   * Analog theremin module.  Basically an oscillator and two distance measuring devices: one for pitch, and one for volume.  [http://www.youtube.com/watch?v=mW0B1sipLBI&feature=related Video of a theremin].
   * Analog signal mixer.  Allows mixing the Core audio output with an attached analog module, such as a theremin.
 
-= Software Libraries =
-  * C++:  
-    1 MIDI Library: http://www.maxmidi.com/
-  * Java:
-    1 Compiled list of Java Music Projects: http://www.softsynth.com/links/java_music.html
