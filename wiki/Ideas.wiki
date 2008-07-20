@@ -1,0 +1,21 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+I think the best way to implement the key interface is by using a matrix circuit to use as few wires as possible. So the question we need to answer is how many keys are we going to have on the instrument?
+
+Some things for now that i would like this instrument to have is two speakers(stereo) and an   
+output jack to hook up to an amp. 
+
+Having MIDI might be a challenge but we first must look at specifications to see if it is feasible. 
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
